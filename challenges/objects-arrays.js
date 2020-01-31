@@ -5,6 +5,11 @@
   Use this pattern to create your objects: 
   object name, diet, weight, length, period
 */
+const myDinosaurs = [
+  { id: 1, d_name: "tyrannosaurus", diet: "carnivorous", weight: "7000kg", length: "12m", period: "Late Cretaceou"},
+  { id: 2, d_name: "stegosaurus", diet: "herbivorous", weight: "2000kg", length: "9m", period: "Late Jurassic"},
+  { id: 3, d_name: "velociraptor", diet: "carnivorous", weight: "15kg", length: "1.8m", period: "Late Cretaceou"},
+];
 
 // tyrannosaurus, carnivorous, 7000kg, 12m, Late Cretaceous
 
@@ -15,20 +20,56 @@
 // Using your dinosaur objects, log answers to these questions:
 
 // How much did tyrannosaurus weigh?
-console.log();
+function getDinoWeigh(arr , num) {
+  for(let i = 0; i < arr.length; i++){
+    if(arr[i].id === num) {
+      return `this dino: '${arr[i].d_name}' weigh: ${arr[i].weight}`
+    } 
+  }
+}
+console.log(getDinoWeigh(myDinosaurs, 1));
+
 
 // What was the diet of a velociraptor?
-console.log();
+function getDinoDiet(arr , num) {
+  for(let i = 0; i < arr.length; i++){
+    if(arr[i].id === num) {
+      return `this dino: '${arr[i].d_name}' diet: ${arr[i].diet}`
+    } 
+  }
+}
+console.log(getDinoDiet(myDinosaurs, 3));
 
 // How long was a stegosaurus?
-console.log();
+function getDinoHeight(arr , num) {
+  for(let i = 0; i < arr.length; i++){
+    if(arr[i].id === num) {
+      return `this dino: '${arr[i].d_name}' length: ${arr[i].length}`
+    } 
+  }
+}
+console.log(getDinoHeight(myDinosaurs , 2));
 
 // What time period did tyrannosaurus live in?
-console.log();
+function getDinoPeriod(arr , num) {
+  for(let i = 0; i < arr.length; i++){
+    if(arr[i].id === num) {
+      return `this dino: '${arr[i].d_name}' period: ${arr[i].period}`
+    } 
+  }
+}
+console.log(getDinoPeriod(myDinosaurs, 1));
 
 
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
-console.log();
+function getDinoRawr(arr , num) {
+  for(let i = 0; i < arr.length; i++){
+    if(arr[i].id === num) {
+      return `this dino: '${arr[i].d_name}' RAWERSRARARWERSARARARRRR!`
+    } 
+  }
+}
+console.log(getDinoRawr(myDinosaurs , 1));
 
 
 // ==== Arrays ====
@@ -51,8 +92,13 @@ const graduates = [
 /* Request 1: Create a new array called universities that contains all the universities in the graduates array. This will be an array of strings.
 
 Once you have the new array created, sort the universities alphabetically and log the result. */
-const universities = [];
-console.log(universities);
+// function universitiesSort(array) {
+//   const universities = array.map((items) => {
+//     return items.university.sort();   
+//   });
+//   return universities
+// }
+// console.log(universities(graduates));
 
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. This will be an array of strings.
 

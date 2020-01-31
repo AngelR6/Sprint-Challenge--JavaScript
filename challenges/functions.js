@@ -7,7 +7,6 @@
   * The consume function should return the invocation of cb, passing a and b into cb as arguments
 */
 
-
 /* Step 2: Create several functions to callback with consume();
   * Create a function named add that returns the sum of two numbers
   * Create a function named multiply that returns the product of two numbers 
